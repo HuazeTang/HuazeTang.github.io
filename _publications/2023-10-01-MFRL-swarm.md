@@ -3,10 +3,10 @@ title: "Autonomous Swarm Robot Coordination via Mean-Field Control Embedding Mul
 collection: publications
 category: conferences
 permalink: /publication/2023-10-01-MFRL-swarm
-excerpt: ''
+excerpt: 'This paper is about the application of mean-field reinforcement learning in swarm robotics.'
 date: 2023-10-01
 venue: '2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)'
-paperurl: 'This paper is about the application of mean-field reinforcement learning in swarm robotics.'
+paperurl: 
 citation: 'Tang, Huaze, et al. "Autonomous Swarm Robot Coordination via Mean-Field Control Embedding Multi-Agent Reinforcement Learning." 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2023.'
 ---
 
