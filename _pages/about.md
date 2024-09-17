@@ -17,7 +17,7 @@ Feel free to explore my work, and I look forward to connecting with fellow resea
 
 Contact
 ------
-Email: [thz21@mails.tsinghua.edu.cn](mailto:thz21@mails.tsinghua.edu.cn); [tanghz24@mails.tsinghua.edu.cn](mailto:tanghz24@mails.tsinghua.edu.cn); / Github: [Huaze Tang's main page](https://github.com/HuazeTang); / Wechat
+Email: [thz21@mails.tsinghua.edu.cn](mailto:thz21@mails.tsinghua.edu.cn); [tanghz24@mails.tsinghua.edu.cn](mailto:tanghz24@mails.tsinghua.edu.cn); / Github: [Huaze Tang's main page](https://github.com/HuazeTang); / Wechat: [QR code](../images/wechat.jpg)
 
 
 News
