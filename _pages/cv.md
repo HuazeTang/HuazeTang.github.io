@@ -11,35 +11,26 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Tsinghua-Berkeley Shenzhen Institute (TBSI), Tsinghua University, 2026 (expected)
+* B.S. in Chien-Shiung Wu College, Southeast University, 2021
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Spring 2024: Research Internship
+  * Meituan Co., Ltd
+  * Duties includes: Develop a training pipeline for a large decision model tailored to fuzz testing.
+  * Mentor: Li Zeng
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming
+  * MATLAB
+  * Python
+  * Golang 
+* Robotics
+  * ROS
+  * Gazebo
+  * ISSCA gym
 
 Publications
 ======
@@ -47,18 +38,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Teaching Assistant of TBSI Course *Advanced Signal Processing* (2024/02-2024/06)
+* Teaching Assistant of TBSI Course *Learning from Data* (2022/09-2023/01)
