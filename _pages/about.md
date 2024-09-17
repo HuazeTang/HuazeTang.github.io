@@ -17,12 +17,12 @@ Feel free to explore my work, and I look forward to connecting with fellow resea
 
 Contact
 ------
-Email: [thz21@mails.tsinghua.edu.cn](mailto:thz21@mails.tsinghua.edu.cn); [tanghz24@mails.tsinghua.edu.cn](mailto:tanghz24@mails.tsinghua.edu.cn); [thzthz39@gmail.com](mailto:thzthz39@gmail.com)
-Github: [Huaze Tang's main page](https://github.com/HuazeTang)
+Email: [thz21@mails.tsinghua.edu.cn](mailto:thz21@mails.tsinghua.edu.cn); [tanghz24@mails.tsinghua.edu.cn](mailto:tanghz24@mails.tsinghua.edu.cn); / Github: [Huaze Tang's main page](https://github.com/HuazeTang); / Wechat
 
 
 News
 ======
-* [2024/08] Transitioned to the Ph.D.
+* [2024/08] Transitioned to the Ph.D. track.
+* [2024/04] Present my work *M^3ARL: Moment-Embedded Mean-Field Multi-Agent Reinforcement Learning for Continuous Action Space* at [ICASSP 2024](https://2024.ieeeicassp.org).
 * [2024/01] Start research internship in Meituan.
 
