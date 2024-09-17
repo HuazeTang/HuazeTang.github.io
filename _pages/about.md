@@ -1,13 +1,19 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+I am a fourth year PhD student at [Tsinghua-Berkey Shenzhen Institute (TBSI)](https://www.tbsi.edu.cn/english/) of [Tsinghua Unviversity](https://www.tsinghua.edu.cn/en/), advised by [Prof. Wenbo Ding](https://ssr-group.net). I originally joined TBSI as a master’s student and, after three years of research (2021-2024), transitioned to the Ph.D. track. I received the B.S. degree in communication engineering in [Chien-Shiung Wu College](https://wjx.seu.edu.cn/wjxen/main.psp) from [Southeast University](https://www.seu.edu.cn/english/main.htm), Nanjing, China, in 2021. 
+
+My research interest includes Reinforcement Learning, Multi-Agent System and Large Models. My current work focuses on advanced topics in reinforcement learning, decision systems, and complex adaptive systems, with an emphasis on applications that bridge theory and practice.
+
+I’m passionate about solving real-world challenges through interdisciplinary research, and my academic journey has been shaped by a desire to push the boundaries of intelligent systems. Outside of my core research, I have a growing interest in fostering collaboration across fields to address high-dimensional problems and system-level optimization.
+
+Feel free to explore my work, and I look forward to connecting with fellow researchers and collaborators!
 
 A data-driven personal website
 ======
