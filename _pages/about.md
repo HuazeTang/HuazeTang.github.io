@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth year Ph.D. student at [Tsinghua-Berkey Shenzhen Institute (TBSI)](https://www.tbsi.edu.cn/english/) of [Tsinghua Unviversity](https://www.tsinghua.edu.cn/en/), advised by [Prof. Wenbo Ding](https://ssr-group.net). I originally joined TBSI as a master’s student and, after three years of research (2021-2024), transitioned to the Ph.D. track. I received the B.S. degree in communication engineering in [Chien-Shiung Wu College](https://wjx.seu.edu.cn/wjxen/main.psp) from [Southeast University](https://www.seu.edu.cn/english/main.htm), Nanjing, China, in 2021. 
+I am a fourth year Ph.D. student at [Tsinghua-Berkey Shenzhen Institute (TBSI)](https://www.tbsi.edu.cn/english/) of [Tsinghua Unviversity](https://www.tsinghua.edu.cn/en/), advised by [Prof. Wenbo Ding](https://ssr-group.net). I originally joined TBSI as a master’s student and, after three years of research (2021-2024), transitioned to the Ph.D. track. I received the B.Eng degree in communication engineering in [Chien-Shiung Wu College](https://wjx.seu.edu.cn/wjxen/main.psp) from [Southeast University](https://www.seu.edu.cn/english/main.htm), Nanjing, China, in 2021. 
 
 My research interest includes Reinforcement Learning, Multi-Agent System and Large Models. My current work focuses on advanced topics in reinforcement learning, decision systems, and complex adaptive systems, with an emphasis on applications that bridge theory and practice.
 

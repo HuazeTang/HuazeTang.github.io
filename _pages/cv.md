@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * Ph.D in Tsinghua-Berkeley Shenzhen Institute (TBSI), Tsinghua University, 2026 (expected)
-* B.S. in Chien-Shiung Wu College, Southeast University, 2021
+* B.Eng in Chien-Shiung Wu College, Southeast University, 2021
 
 Work experience
 ======
