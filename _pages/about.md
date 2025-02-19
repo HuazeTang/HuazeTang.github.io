@@ -23,7 +23,7 @@ Email: [thz21@mails.tsinghua.edu.cn](mailto:thz21@mails.tsinghua.edu.cn); [tangh
 News
 ======
 * [2025/01] Our paper *Residual Kernel Policy Network: Enhancing Stability and Robustness in RKHS-Based Reinforcement Learning* get accepted as poster in [ICLR 2025](https://openreview.net/forum?id=2vgcDW2blS)! See you in Singapore!
-* [2024/] Our paper *Mean-Field Aided QMIX: A Scalable and Flexible Q-Learning Approach For Large-Scale Agent Groups* get accepted in [ICASSP 2025](https://2025.ieeeicassp.org). See you in Hyderabad!
+* [2025/01] Our paper *Mean-Field Aided QMIX: A Scalable and Flexible Q-Learning Approach For Large-Scale Agent Groups* get accepted in [ICASSP 2025](https://2025.ieeeicassp.org). See you in Hyderabad!
 * [2024/08] Transitioned to the Ph.D. track.
 * [2024/04] Present my work *M^3ARL: Moment-Embedded Mean-Field Multi-Agent Reinforcement Learning for Continuous Action Space* at [ICASSP 2024](https://2024.ieeeicassp.org).
 * [2024/01] Start research internship in Meituan.
