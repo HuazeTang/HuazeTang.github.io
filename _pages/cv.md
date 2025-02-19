@@ -19,7 +19,7 @@ Work experience
 * Spring 2024: Research Internship
   * Meituan Co., Ltd
   * Duties includes: Develop a training pipeline for a large decision model tailored to fuzz testing.
-  * Mentor: Li Zeng
+  * Mentor: Li Zeng (Bill)
   
 Skills
 ======
