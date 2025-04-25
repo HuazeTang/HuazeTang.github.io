@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Tsinghua-Berkeley Shenzhen Institute (TBSI), Tsinghua University, 2026 (expected)
+* Ph.D in Tsinghua Shenzhen International Graduate School (SIGS), Tsinghua University, 2026 (expected)
 * B.Eng in Chien-Shiung Wu College, Southeast University, 2021
 
 Work experience
@@ -40,5 +40,6 @@ Publications
   
 Service and leadership
 ======
+* Teaching Assistant of TBSI Course *Advanced Signal Processing* (2025/02-2025/06)
 * Teaching Assistant of TBSI Course *Advanced Signal Processing* (2024/02-2024/06)
 * Teaching Assistant of TBSI Course *Learning from Data* (2022/09-2023/01)
