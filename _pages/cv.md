@@ -19,6 +19,9 @@ Work experience
 * Spring 2024: Research Internship
   * Meituan Co., Ltd
   * Duties includes: Develop a training pipeline for a large decision model tailored to fuzz testing.
+    * Jobs: Designed and implemented 1B / 2B / 7B parameter models from scratch, including optimization of mixed precision training pipelines (dataset, trainer and model, etc.) and deployment of low-latency serving infrastructure.
+    * Results: our approach achieves over 8 times more vulnerability discovery efficiency compared with traditional expert-guided random-walk exploitation.
+  * Award: [卓越实践奖](https://mp.weixin.qq.com/s/UoUYaNAbJGxQu1kt0oNkYg)
   * Mentor: Li Zeng (Bill)
   
 Skills

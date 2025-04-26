@@ -23,6 +23,7 @@ Email: [tanghz24@mails.tsinghua.edu.cn](mailto:tanghz24@mails.tsinghua.edu.cn); 
 
 News
 ======
+* [2025/04] Our work in meituan has been awarded as [卓越实践奖 (Excellent Practice Award)](https://mp.weixin.qq.com/s/UoUYaNAbJGxQu1kt0oNkYg) by meituan! Thanks to my labmate Chao Wang, my mentor and colleague in meituan and my supervisor.
 * [2025/01] Our paper *Residual Kernel Policy Network: Enhancing Stability and Robustness in RKHS-Based Reinforcement Learning* gets accepted as poster in [ICLR 2025](https://openreview.net/forum?id=2vgcDW2blS)! See you in Singapore!
 * [2025/01] Our paper *Mean-Field Aided QMIX: A Scalable and Flexible Q-Learning Approach For Large-Scale Agent Groups* gets accepted in [ICASSP 2025](https://2025.ieeeicassp.org). See you in Hyderabad!
 * [2024/08] Transitioned to the Ph.D. track.
