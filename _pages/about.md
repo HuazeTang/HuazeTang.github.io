@@ -14,7 +14,7 @@ My research interests lie in reinforcement learning, multi-agent systems, and la
 
 I am passionate about addressing real-world challenges through interdisciplinary research. Throughout my academic journey, I have been driven by a desire to advance the frontiers of intelligent systems. Beyond my primary research, I am increasingly interested in cross-disciplinary collaboration, particularly in tackling high-dimensional and complex systems.
 
-Feel free to explore my work, and I welcome discussions and collaborations with fellow researchers from all fields!
+Feel free to explore my work, and I welcome discussions and collaborations with researchers from all fields!
 
 Contact
 ------
