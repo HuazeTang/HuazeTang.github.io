@@ -8,13 +8,13 @@ redirect_from:
 ---
 
 
-I am a fourth year Ph.D. student at [Tsinghua Shenzhen International Graduate School (SIGS)](https://www.sigs.tsinghua.edu.cn/en/) of [Tsinghua Unviversity](https://www.tsinghua.edu.cn/en/), advised by [Prof. Wenbo Ding](https://ssr-group.net). I originally joined Tsinghua-Berkey Shenzhen Institute (TBSI) as a master’s student and, after three years of research (2021-2024), transitioned to the Ph.D. track. I received the B.Eng degree in communication engineering in [Chien-Shiung Wu College](https://wjx.seu.edu.cn/wjxen/main.psp) from [Southeast University](https://www.seu.edu.cn/english/main.htm), Nanjing, China, in 2021. 
+I am a fourth year Ph.D. student at [Tsinghua Shenzhen International Graduate School (SIGS)](https://www.sigs.tsinghua.edu.cn/en/) of [Tsinghua Unviversity](https://www.tsinghua.edu.cn/en/), advised by Assoc. Prof. [Wenbo Ding](https://ssr-group.net). I initially joined Tsinghua-Berkey Shenzhen Institute (TBSI) as a master’s student and transitioned to the Ph.D. track after three years of research (2021-2024). Prior to that, I received the B.Eng degree in communication engineering from [Chien-Shiung Wu College](https://wjx.seu.edu.cn/wjxen/main.psp) at [Southeast University](https://www.seu.edu.cn/english/main.htm), Nanjing, China, in 2021.  I was honored to complete my undergraduate thesis under the supervision of Prof. [Shi Jin](https://scholar.google.com/citations?user=xGkd6qwAAAAJ&hl=en).
 
-My research interest includes Reinforcement Learning, Multi-Agent System and Large Models. My current work focuses on mean field approximation with information geometry for large scale swarm control problems. My ultimate goal is to design an algorithm for controlling unlimited swarm size of agents with theoretical guarantee. 
+My research interests lie in reinforcement learning, multi-agent systems, and large models. Currently, I am working on mean field approximation methods grounded in information geometry, with a focus on scalable control strategies for large-scale swarm systems. My long-term goal is to develop algorithms capable of controlling swarms of arbitrary size with strong theoretical guarantees.
 
-I’m passionate about solving real-world challenges through interdisciplinary research, and my academic journey has been shaped by a desire to push the boundaries of intelligent systems. Outside of my core research, I have a growing interest in fostering collaboration across fields to address high-dimensional problems.
+I am passionate about addressing real-world challenges through interdisciplinary research. Throughout my academic journey, I have been driven by a desire to advance the frontiers of intelligent systems. Beyond my primary research, I am increasingly interested in cross-disciplinary collaboration, particularly in tackling high-dimensional and complex systems.
 
-Feel free to explore my work, and I look forward to connecting with fellow researchers and collaborators!
+Feel free to explore my work, and I welcome discussions and collaborations with fellow researchers from all fields!
 
 Contact
 ------

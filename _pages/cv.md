@@ -34,6 +34,8 @@ Skills
   * ROS
   * Gazebo
   * ISSCA gym
+* LLM
+  * Transformer
 
 Publications
 ======
