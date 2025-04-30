@@ -18,7 +18,9 @@ Feel free to explore my work, and I welcome discussions and collaborations with 
 
 Contact
 ------
-Email: [tanghz24@mails.tsinghua.edu.cn](mailto:tanghz24@mails.tsinghua.edu.cn); [thz21@mails.tsinghua.edu.cn](mailto:thz21@mails.tsinghua.edu.cn); / Github: [Huaze Tang's main page](https://github.com/HuazeTang); / Wechat: [QR code](../images/wechat.jpg)
+* Email: [tanghz24@mails.tsinghua.edu.cn](mailto:tanghz24@mails.tsinghua.edu.cn); [thz21@mails.tsinghua.edu.cn](mailto:thz21@mails.tsinghua.edu.cn); 
+* Github: [Huaze Tang's main page](https://github.com/HuazeTang); 
+* Wechat: [QR code](../images/wechat.jpg)
 
 
 News
