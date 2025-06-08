@@ -33,7 +33,7 @@ $$
 D_{\text{KL}}(\mu\Vert \nu) = \sum_{x\in\mathcal{X}} p(x)\log\frac{p(x)}{q(x)}.
 $$
 
-* Continuous Distributions: if \\(\mu\\) and \\(\nu\\) are continuous distributions with probability density functions $p(x)$ and $q(x)$ with respect to a common measure (e.g., Lebesgue measure), then:
+* Continuous Distributions: if \\(\mu\\) and \\(\nu\\) are continuous distributions with probability density functions \\(p(x)\\) and \\(q(x)\\) with respect to a common measure (e.g., Lebesgue measure), then:
 
 $$
 D_{\text{KL}}(\mu\Vert \nu) = \int_{\mathcal{X}} p(x)\log\frac{p(x)}{q(x)}\mathrm{d}x.
@@ -45,19 +45,19 @@ KL divergence in error probobility
 ------
 The KL divergence quantifies the asymptotic decay rate of error probabilities in statistical hypothesis testing, particularly in distinguishing between two distributions \\(\mu\\) (null hypothesis \\(H_0\\)) and \\(\nu\\) (alternative hypothesis \\(H_1\\)) as the sample size \\(n\to\infty\\). The core of this is the Stein's Lemma:
 
-In Neyman-Pearson hypothesis testing with fixed Type I error probability (\\(\alpha\\), False rejection of \\(H_0\\)), he Type II error probability ($\beta_n$, False acceptance of \\(H_0\\)) decays exponentially with $n$. The KL divergence governs this decay rate:
+In Neyman-Pearson hypothesis testing with fixed Type I error probability (\\(\alpha\\), False rejection of \\(H_0\\)), he Type II error probability (\\(\beta_n\\), False acceptance of \\(H_0\\)) decays exponentially with \\(n\\). The KL divergence governs this decay rate:
 
 $$
 \lim_{n\to\infty} \frac{1}{n}\log \beta_n = - D_{\text{KL}}(\mu\Vert\nu).
 $$
 
-Equivalently, $\beta_n\approx \exp(-n\cdot D_{\text{KL}}(\mu\Vert\nu))$ for large $n$. This is because the optimal test uses the log-likelihood ratio is adopted to decide whether to accept the hypothesis \\(H_0\\) or not: denote
+Equivalently, \\(\beta_n\approx \exp(-n\cdot D_{\text{KL}}(\mu\Vert\nu))\\) for large $\\(n\\). This is because the optimal test uses the log-likelihood ratio is adopted to decide whether to accept the hypothesis \\(H_0\\) or not: denote
 
 $$
 \text{LLR} = \frac{1}{n}\sum_{i=1}^n \log\frac{\mu(x_i)}{\nu(x_i)},
 $$
 
-and if $\text{LLR}>0$ then accept \\(H_0\\) and accept \\(H_1\\) otherwise. Hence, by the law of large numbers:
+and if \\(\text{LLR}>0\\) then accept \\(H_0\\) and accept \\(H_1\\) otherwise. Hence, by the law of large numbers:
 
 $$
 \lim_{n\to\infty} \text{LLR} = \mathbb{E}_{\mu} \log\frac{\mu(x)}{\nu(x)} = D_{\text{KL}}(\mu\Vert\nu).
@@ -119,13 +119,13 @@ Futher thoughts on KL divergence
 
 Maybe some better constraints?
 ------
-For Bayesian testing (minimizing total error $P_e = \pi_0\alpha+\pi_1\beta$, where $\pi_0$ and $\pi_1$ are priors, the error decays as:
+For Bayesian testing (minimizing total error \\(P_e = \pi_0\alpha+\pi_1\beta\\), where \\(\pi_0\\) and \\(\pi_1\\) are priors, the error decays as:
 
 $$
 \lim_{n\to\infty}\frac{1}{n}P_e = -C(\mu,\nu).
 $$
 
-Here, $C(\mu,\nu)$ is named as Chernoff information, which is related to KL divergence:
+Here, \\(C(\mu,\nu)\\) is named as Chernoff information, which is related to KL divergence:
 
 $$
 C(\mu,\nu) = \sup_{t\in[0,1]}\left(-log\int_{\mathcal{X}}\mu^{t}(x)\nu^{1-t}(x)\mathrm{d}x\right) \leq \min\left(D_{\text{KL}}(\mu,\nu),D_{\text{KL}}(\nu,\mu)\right).
@@ -135,5 +135,5 @@ So, can we use Chernoff information as one constraint?
 
 What is weighted constraint?
 ------
-The KL divergence can be viewed as constraint on each case equally. However, there can be a case that when the state $s$
+The KL divergence can be viewed as constraint on each case equally. However, there can be a case that when the state \\(s\\)
 explored by the new policy \\(\pi\\) is good (e.g. value function \\(V(s)\\) or reward \\(r(s, \pi(s))\\) is high), we may want to loose the constraint to this state. Therefore, can we adopt a weighted constraint on the log-likelihood ratio?
