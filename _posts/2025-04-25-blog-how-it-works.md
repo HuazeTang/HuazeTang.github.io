@@ -51,7 +51,7 @@ $$
 \lim_{n\to\infty} \frac{1}{n}\log \beta_n = - D_{\text{KL}}(\mu\Vert\nu).
 $$
 
-Equivalently, \\(\beta_n\approx \exp(-n\cdot D_{\text{KL}}(\mu\Vert\nu))\\) for large $\\(n\\). This is because the optimal test uses the log-likelihood ratio is adopted to decide whether to accept the hypothesis \\(H_0\\) or not: denote
+Equivalently, \\(\beta_n\approx \exp(-n\cdot D_{\text{KL}}(\mu\Vert\nu))\\) for large \\(n\\). This is because the optimal test uses the log-likelihood ratio is adopted to decide whether to accept the hypothesis \\(H_0\\) or not: denote
 
 $$
 \text{LLR} = \frac{1}{n}\sum_{i=1}^n \log\frac{\mu(x_i)}{\nu(x_i)},
@@ -86,7 +86,7 @@ In one another way, we can view the constraint as a hyponthesis testing problem.
 
 * \\(H_1\\) be "the policy for collecting data is new policy \\(\pi\\)".
 
-Our goal is that under trajecoty data \\(\{\tau_i\}_{i=1}^n\\) collected by new policy, with each trajectory \\(\tau_i=(s_i^1,a_i^1,\dots, s_i^{T_i}, a_i^{T_i})\\), find the risk of accepting \\(H_0\\) (as the risk of rejecting \\(H_0\\) is always 0). We adopt the log-likelihood ratio:
+Our goal is that under trajecoty data \\({\tau_i}_{i=1}^n\\) collected by new policy, with each trajectory \\(\tau_i=(s_i^1,a_i^1,\dots, s_i^{T_i}, a_i^{T_i})\\), find the risk of accepting \\(H_0\\) (as the risk of rejecting \\(H_0\\) is always 0). We adopt the log-likelihood ratio:
 
 $$
 \text{LLR} = \frac{1}{n}\sum_{i=1}^n\log\frac{p_{\pi}(\tau_i)}{p_{\pi_{\text{old}}}(\tau_i)},
