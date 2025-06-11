@@ -1,8 +1,8 @@
 ---
-title: "How it works: why use KL divergence as policy constraint? An information theory perspective."
+title: "Why it works: why use KL divergence as policy constraint? An information theory perspective."
 collection: posts
 date: 2025-04-25
-permalink: /posts/2025/how_it_works/kl_divergence/
+permalink: /posts/2025/why_it_works/kl_divergence/
 tags:
   - Reinforcement Learning
   - Information Theory
