@@ -133,7 +133,7 @@ $$
 then we can write
 
 $$
-\hat{D}_{KL}(\pi\Vert \pi_{\text{old}}) = \frac{1}{n}\sum_i {D}_{KL}\big(\pi(\cdot | s_i)\Vert \pi_{\text{old}}(\cdot | s_i)\big).
+\hat{D}_{KL}(\pi\Vert \pi_{\text{old}}) = \frac{1}{n}\sum_{i=1}^n {D}_{KL}\big(\pi(\cdot | s_i)\Vert \pi_{\text{old}}(\cdot | s_i)\big).
 $$
 
 By law of large number, we have that with possibility 1, when \\( n\to\infty\\),
@@ -142,7 +142,7 @@ $$
 \hat{D}_{KL}(\pi\Vert \pi_{\text{old}})  \to \mathbb{E}_{s\sim d_\pi}\left[{D}_{KL}\big(\pi(\cdot | s)\Vert \pi_{\text{old}}(\cdot | s)\big)\right] = {D}_{KL}(\pi\Vert \pi_{\text{old}}).
 $$
 
-The convergence rate is \\(O(n^{-1/2}\\), by central limit theorem.
+The convergence rate is \\(O(n^{-1/2})\\), by central limit theorem.
 
 Dataset/buffer-based approximation
 ----
