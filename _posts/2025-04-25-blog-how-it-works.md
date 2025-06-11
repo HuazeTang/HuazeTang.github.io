@@ -118,7 +118,7 @@ Paritical approximation of KL divergence
 Sample-based approximation
 -----
 
-In paritical, it is hard to get the marginal distribution \\(\rho_pi\\). Hence, the KL divergence is usually approximated via Monte Carlo method:
+In paritical, it is hard to get the marginal distribution \\(\rho_\pi\\). Hence, the KL divergence is usually approximated via Monte Carlo method:
 
 $$
 \hat{D}_{KL}(\pi\Vert \pi_{\text{old}}) = \frac{1}{n}\sum_{i=1}^n \mathbb{E}_{a\sim \pi(\cdot | s_i)}\left[\log\frac{\pi(a\vert s_i)}{\pi_{\text{old}}(a\vert s_i)}\right].
