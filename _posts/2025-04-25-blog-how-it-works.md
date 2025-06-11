@@ -43,7 +43,7 @@ KL divergence are long be viewed as a kind of *distance* for distribution. Howev
 
 KL divergence in error probobility
 ------
-The KL divergence quantifies the asymptotic decay rate of error probabilities in statistical hypothesis testing, particularly in distinguishing between two distributions \\(\mu\\) (null hypothesis \\(H_0\\)) and \\(\nu\\) (alternative hypothesis \\(H_1\\)) as the sample size \\(n\to\infty\\). The core of this is the Stein's Lemma:
+The KL divergence quantifies the asymptotic decay rate of error probabilities in statistical hypothesis testing, particularly in distinguishing between two distributions \\(\mu\\) (null hypothesis \\(H_0\\)) and \\(\nu\\) (alternative hypothesis \\(H_1\\)) as the sample size \\(n\to\infty\\). The core of this is the Stein's Lemma [1].
 
 In Neyman-Pearson hypothesis testing with fixed Type I error probability (\\(\alpha\\), False rejection of \\(H_0\\)), he Type II error probability (\\(\beta_n\\), False acceptance of \\(H_0\\)) decays exponentially with \\(n\\). The KL divergence governs this decay rate:
 
@@ -76,7 +76,7 @@ When collecting data with new policy \\(\pi\\) yet applying value function of ol
 
 * Distribution shift: the state grenerated from new policy \\(\pi\\) shifts from that of \\(\pi_{\text{old}}\\), disabling the value function to judge the current state. This case is common in off-policy RL tasks.
 
-The avoid or relief these risks, methods hope to constrain the new policy from too far away from old policy \\(\pi_{\text{old}}\\). This gives birth to the trust region concept.
+The avoid or relief these risks, methods hope to constrain the new policy from too far away from old policy \\(\pi_{\text{old}}\\). This gives birth to the trust region concept [2].
 
 KL divergence as error constraint
 ------
@@ -112,11 +112,50 @@ $$
 
 with \\(\rho_\pi=d_{\pi}(s)\pi(a\vert s)\\) and \\(d_{\pi}(s)\\) is the stable state marginal distribution of policy \\(\pi\\). Therefore, we can view the KL divergence of a natural constraint of policy in the view of information theory. 
 
+Paritical approximation of KL divergence
+=====
+
+Sample-based approximation
+-----
+
 In paritical, it is hard to get the marginal distribution \\(\rho_pi\\). Hence, the KL divergence is usually approximated via Monte Carlo method:
 
 $$
-\hat{D}_{KL}(\pi\Vert \pi_{\text{old}}) = \frac{1}{n}\sum_{i=1}^n \pi(a\vert s_i)\log\frac{\pi(a\vert s_i)}{\pi_{\text{old}}(a\vert s_i)}.
+\hat{D}_{KL}(\pi\Vert \pi_{\text{old}}) = \frac{1}{n}\sum_{i=1}^n \mathbb{E}_{a\sim \pi(\cdot | s_i)}\left[\log\frac{\pi(a\vert s_i)}{\pi_{\text{old}}(a\vert s_i)}\right].
 $$
+
+Denote the conditional KL divergence as
+
+$$
+{D}_{KL}\big(\pi(\cdot | s)\Vert \pi_{\text{old}}(\cdot | s)\big) = \mathbb{E}_{a\sim \pi(\cdot | s)}\left[\log\frac{\pi(a\vert s)}{\pi_{\text{old}}(a\vert s)}\right],
+$$
+
+then we can write
+
+$$
+\hat{D}_{KL}(\pi\Vert \pi_{\text{old}}) = \frac{1}{n}\sum_i {D}_{KL}\big(\pi(\cdot | s_i)\Vert \pi_{\text{old}}(\cdot | s_i)\big).
+$$
+
+By law of large number, we have that with possibility 1, when \\( n\to\infty\\),
+
+$$
+\hat{D}_{KL}(\pi\Vert \pi_{\text{old}})  \to \mathbb{E}_{s\sim d_\pi}\left[{D}_{KL}\big(\pi(\cdot | s)\Vert \pi_{\text{old}}(\cdot | s)\big)\right] = {D}_{KL}(\pi\Vert \pi_{\text{old}}).
+$$
+
+The convergence rate is \\(O(n^{-1/2}\\), by central limit theorem.
+
+Dataset/buffer-based approximation
+----
+
+An alternative approximation in the off-policy paradigm is re-usage of data in off-policy buffer. We can see this is adopted in literatures [2, 3]. Similarly, in the offline paradigm, the data in dataset can be used. The approxiamted KL divergence is
+
+$$
+\hat{D}_{KL}(\pi\Vert \pi_{\text{old}}) = \mathbb{E}_{s\sim \mathcal{D}}\left[{D}_{KL}\big(\pi(\cdot | s)\Vert \pi_{\text{old}}(\cdot | s)\big)\right],
+$$
+
+where \\(\mathcal{D}\\) is the dataset of buffer. Note that the data in the buffer may not sampled by the policy \\(\pi\\). Hence, it is very tricky to understand what this approximation is doing. I think this deserves a new blog to talk about. Here, we only check two extrame cases: (i) If all the data are collected by new policy, then this approximation is exactly the sample-based approximation. (ii) If all the data are collected by old policy, then this approximation becomes the inverse KL divergence, namely, \\(D_{\text{KL}(\pi_{\text{old}}\|\pi)}\\) (note that KL divergence is asymmetric!)
+
+
 
 <!-- Therefore, we can find that the risk of acceptance is actually equalt to the KL divergence of marginal distribution of state-action joint pair $(s,a)$ under different policy. -->
 
@@ -131,10 +170,10 @@ $$
 \lim_{n\to\infty}\frac{1}{n}P_e = -C(\mu,\nu).
 $$
 
-Here, \\(C(\mu,\nu)\\) is named as Chernoff information, which is related to KL divergence:
+Here, \\(C(\mu,\nu)\\) is named as Chernoff information [4], which is related to KL divergence:
 
 $$
-C(\mu,\nu) = \sup_{t\in[0,1]}\left(-log\int_{\mathcal{X}}\mu^{t}(x)\nu^{1-t}(x)\mathrm{d}x\right) \leq \min\left(D_{\text{KL}}(\mu,\nu),D_{\text{KL}}(\nu,\mu)\right).
+C(\mu,\nu) = \sup_{t\in[0,1]}\left(-log\int_{\mathcal{X}}\mu^{t}(x)\nu^{1-t}(x)\mathrm{d}x\right) \leq \min\left(D_{\text{KL}}(\mu\|\nu),D_{\text{KL}}(\nu\|\mu)\right).
 $$
 
 So, can we use Chernoff information as one constraint?
@@ -143,3 +182,12 @@ What is weighted constraint?
 ------
 The KL divergence can be viewed as constraint on each case equally. However, there can be a case that when the state \\(s\\)
 explored by the new policy \\(\pi\\) is good (e.g. value function \\(V(s)\\) or reward \\(r(s, \pi(s))\\) is high), we may want to loose the constraint to this state. Therefore, can we adopt a weighted constraint on the log-likelihood ratio?
+
+References
+======
+<ol style="list-style-type: none; padding-left: 0;">
+    <li> [1] Cover, Thomas M. Elements of information theory. John Wiley & Sons, 1999.</li>
+    <li> [2] Schulman, John, et al. "Trust region policy optimization." International conference on machine learning. PMLR, 2015.</li>
+    <li> [3] Peng, Xue Bin, et al. "Advantage-weighted regression: Simple and scalable off-policy reinforcement learning." arXiv preprint arXiv:1910.00177 (2019).</li>
+    <li> [4] Chernoff, Herman. "A measure of asymptotic efficiency for tests of a hypothesis based on the sum of observations." The Annals of Mathematical Statistics (1952): 493-507.</li>
+</ol>
