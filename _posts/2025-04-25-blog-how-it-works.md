@@ -101,16 +101,22 @@ $$
 is the probability of \\(\tau_i\\) under policy \\(\pi\\) with transition probility \\(T(\cdot\vert s,a)\\). Hence, we have the limit of \\(\text{LLR}\\) as
 
 $$
-\lim_{n\to\infty}\text{LLR} = \lim_{n\to\infty}\frac{1}{n}\sum_{t=1}^{T_i}\sum_{i=1}^n\log\frac{\pi(a_i^{t}\vert s_i^t)}{\pi_{\text{old}}(a_i^{t}\vert s_i^t)} = D_{KL}(\pi\Vert \pi_{\text{old}}),
+\lim_{n\to\infty}\text{LLR} = \lim_{n\to\infty}\frac{1}{n}\sum_{t=1}^{T_i}\sum_{i=1}^n\log\frac{\pi(a_i^{t}\vert s_i^t)}{\pi_{\text{old}}(a_i^{t}\vert s_i^t)} \overset{a.s.}{=} D_{KL}(\pi\Vert \pi_{\text{old}}),
 $$
 
 where
 
 $$
-D_{KL}(\pi\Vert \pi_{\text{old}}) = \mathbb{E}_{(s,a)\sim\rho_\pi}\left[\frac{\pi(a\vert s)}{\pi_{\text{old}}(a\vert s)}\right],
+D_{KL}(\pi\Vert \pi_{\text{old}}) = \mathbb{E}_{(s,a)\sim\rho_\pi}\left[\log\frac{\pi(a\vert s)}{\pi_{\text{old}}(a\vert s)}\right],
 $$
 
-with \\(\rho_\pi=d_{\pi}(s)\pi(a\vert s)\\) and \\(d_{\pi}(s)\\) is the stable state marginal distribution of policy \\(\pi\\). Therefore, we can view the KL divergence of a natural constraint of policy in the view of information theory.
+with \\(\rho_\pi=d_{\pi}(s)\pi(a\vert s)\\) and \\(d_{\pi}(s)\\) is the stable state marginal distribution of policy \\(\pi\\). Therefore, we can view the KL divergence of a natural constraint of policy in the view of information theory. 
+
+In paritical, it is hard to get the marginal distribution \\(\rho_pi\\). Hence, the KL divergence is usually approximated via Monte Carlo method:
+
+$$
+\hat{D}_{KL}(\pi\Vert \pi_{\text{old}}) = \frac{1}{n}\sum_{i=1}^n \pi(a\vert s_i)\log\frac{\pi(a\vert s_i)}{\pi_{\text{old}}(a\vert s_i)}.
+$$
 
 <!-- Therefore, we can find that the risk of acceptance is actually equalt to the KL divergence of marginal distribution of state-action joint pair $(s,a)$ under different policy. -->
 
